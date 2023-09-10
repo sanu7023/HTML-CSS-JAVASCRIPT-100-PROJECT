@@ -1,0 +1,49 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,body{
+ height: 100%;
+ width: 100%;
+}
+body{
+    background-color: teal;
+}
+UL{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50PX;
+    border: 10PX solid white;
+    border-radius: 10px;
+    display: inline-block;
+}
+ul li{
+    font-size: 50px;
+    float: left;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background-image: url("https://wallpapers.com/images/hd/multicolor-background-xpmocn0hvcemv2q1.jpg");
+    background-clip: text;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .8s ease;
+}
+ul:hover li{
+    transform: rotateY(360deg);
+}
+ul:hover li:nth-child(1){
+    transition-delay: .9s;
+}
+ul:hover li:nth-child(2){
+    transition-delay: .6s;
+}
+ul:hover li:nth-child(3){
+    transition-delay: .3s;
+}
