@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radome Image Generate</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        header{
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .image_box{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            margin-top: 8rem;
+            /* border: 1px solid red; */
+            row-gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Picsum</h1>
+        <p>Get amazing photo for free</p>
+        <button class="btn">Get Photo</button>
+    </header>
+
+    <section class="image_box"></section>
+
+    <script>
+        let imageBox = document.querySelector(".image_box");
+        let getImageBtn = document.querySelector(".btn");
+
+        let i = 0;
+        getImageBtn.addEventListener("click", ()=>{
+            i++;
+            imageBox.innerHTML += `<img src="https://picsum.photos/200/300?random=${i}">`
+        })
+    </script>
+</body>
+</html>
