@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Application</title>
+    <!-- ===== remix icons cdn link ===== -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== main container section start ===== -->
+     <section class="maxWidth">
+        <h1>Budget Application</h1>
+        <div class="container">
+            <div class="col_1">
+                <h3>Budget</h3>
+                <form action="" class="budget_form">
+                    <input type="number" class="input_field budget_input" placeholder="Enter Budget">
+                    <button class="btn budget_btn">Set Budget</button>
+                </form>
+            </div>
+            <div class="col_2">
+                <h3>Expense</h3>
+                <form action="" class="budget_form">
+                    <input type="text" class="input_field product_title" placeholder="Enter Product Title">
+                    <input type="number" class="input_field product_cost" placeholder="Enter Cose of Product">
+                    <button class="btn product_btn">Set Expenses</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="total_budget">
+                <p>Total Budget</p>
+                <span class="totla_budget_child">0</span>
+            </div>
+            <div class="total_expense">
+                <p>Total Expense</p>
+                <span class="total_expense_child">0</span>
+            </div>
+            <div class="total_balance">
+                <p>Available Balance</p>
+                <span class="total_balance_child">0</span>
+            </div>
+        </div>
+
+        <!-- <div class="horizontal_line"></div> -->
+
+        <div class="container">
+            <div class="list">
+                <h3>Expense List</h3>
+                <div class="parent_list">
+                    <!-- <div class="list_container">
+                        <div class="product">
+                            <h4 class="f_box">dsfdsfs</h4>
+                            <p class="f_box">345435</p>
+                            <div class="edit_del f_box">
+                                <i class="ri-edit-box-line edit_btn"></i>
+                                <i class="ri-delete-bin-5-line delete_item"></i>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ===== main container section end ===== -->
+
+    <script src="script.js"></script>
+</body>
+</html>
