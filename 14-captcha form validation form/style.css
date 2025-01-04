@@ -1,0 +1,39 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,body{
+ height: 100%;
+ width: 100%;
+}
+
+body{
+    background-color: #f1f1f1;
+        }
+    h2{
+        font-weight: 700;
+        line-height: 1.5;
+        color: #000;
+        font-family: lora,serif;
+    }
+    .form-container
+     {
+      box-shadow: 0px -12px 24px rgb(47 65 129 / 10%);
+       padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-top: 10px ;
+    }
+        input, textarea, select {
+        padding: 10px 20px;
+        color: #1E266D;
+        width: 100%;
+        height: 50px;
+        background: #F5FAFF !important;
+        border: 1px solid #EEF1FF;
+        border-radius: 5px;
+    }
+    textarea{
+        height:150px;
+    }
