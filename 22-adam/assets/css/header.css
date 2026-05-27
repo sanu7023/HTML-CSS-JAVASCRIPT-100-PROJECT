@@ -1,0 +1,92 @@
+/* ========== top navbar sevtion start ========== */
+header{
+    background-color: #cecbcb;
+}
+.top_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.top_navbar .top_navbar_box{
+    flex-basis: 33%;
+    /* border: 1px solid; */
+    padding: 1rem;
+    text-align: center;
+}
+.top_navbar .top_navbar_box .contact_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_navbar_box .contact_icons .contact_icons_box{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+.contact_icons .contact_icons_box i{
+    font-size: 1.3rem;
+    transition: all .3s ease-in-out;
+}
+.contact_icons .contact_icons_box:hover i{
+    color: var(--white-c);
+    font-size: 1.2rem;
+}
+.contact_icons .contact_icons_box:hover{
+    background-color: var(--black-c);
+}
+/* ========== top navbar sevtion end ========== */
+
+/* ========== bottom navbar sevtion start ========== */
+.bottom_nav_container{
+    /* border: 1px solid; */
+    max-width: 200px;
+    width: 100%;
+    position: fixed;
+    top: 4.1rem;
+    right: 0;
+    padding: 1rem 0;
+    background-color: var(--white-c);
+    z-index: 9;
+}
+.bottom_nav_container .bottom_nav_a{
+    padding: 0rem 1rem;
+    /* border: 1px solid; */
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+/* =========== mobile navbar section start ========== */
+.mobile_header{
+    display: none;
+}
+.mobile_navbar_container{
+    padding: .6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile_navbar_container .menubar{
+    width: 35px;
+    height: 35px;
+    background-color: var(--black-c);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_navbar_container .menubar i{
+    font-size: 1.3rem;
+    color: var(--white-c);
+}
+/* =========== mobile navbar section end ========== */
+/* ========== bottom navbar sevtion end ========== */

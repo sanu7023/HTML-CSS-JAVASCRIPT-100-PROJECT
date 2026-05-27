@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery intro</title>
+
+    <!-- ===== custom style file link ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="container container0">
+            <h3>hide perticular para on clicking the para</h3>
+            <p class="p_hide">click and hide me</p>
+            <p class="p_hide">click and hide me again</p>
+        </div>
+    
+        <div class="container container1">
+            <h3>select all class selector and hide</h3>
+            <p class="p_btn">Lorem ipsum dolor sit amet.</p>
+            <p class="p_btn">Lorem ipsum dolor sit.</p>
+            <p class="p_btn">Lorem ipsum dolor sit amet consectetur.</p>
+            <button id="btn">Clock and hide all para</button>
+        </div>
+    
+        <div class="container container2">
+            <h3>hide id selector slement</h3>
+            <p id="id_btn">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <button id="hide_id"> hide id selector</button>
+        </div>
+    
+        <div class="container container3">
+            <h3>duble click to hide para</h3>
+            <p class="duble">Lorem ipsum dolor sit amet.1</p>
+            <p class="duble">Lorem ipsum dolor sit amet.2</p>
+            <p class="duble">Lorem ipsum dolor sit amet.3</p>
+        </div>
+    
+        <div class="container container4">
+            <h3>mouse hover alert popup show</h3>
+            <p class="mouse">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+    
+        <div class="container container5">
+            <h3>when mouse leave in para then show alert</h3>
+            <p class="m_leave">Lorem ipsum dolor sit.</p>
+        </div>
+    
+        <div class="container container6">
+            <h3>when mouse down in para then show alert</h3>
+            <p class="m_down">Lorem ipsum dolor sit.</p>
+        </div>
+    
+        <div class="container container7">
+            <h3>when mouse up in para then show alert</h3>
+            <p class="m_up">Lorem ipsum dolor sit.</p>
+        </div>
+    
+        <div class="container container8">
+            <h3>when mouse hover in para then show alert</h3>
+            <p class="m_hover">Lorem ipsum dolor sit.</p>
+        </div>
+    
+        <div class="container container9">
+            <h3>when focus in input then input background color change</h3>
+            <input type="text" class="i_focus" placeholder="Enter text-1">
+            <input type="text" class="i_focus" placeholder="Enter text-2">
+        </div>
+    
+        <div class="container container10">
+            <h3>click para change background color using on()</h3>
+            <p class="onc">click me to change background color</p>
+        </div>
+    
+        <div class="container container11">
+            <h3>mouse enter change color, mouse leave change color, and click to change color</h3>
+            <p class="memlc">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="container container12">
+            <h3>click button show and hide</h3>
+            <p class="shhi">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <button id="show">Show</button>
+            <button id="hide">Hide</button>
+        </div>
+
+        <div class="container container13">
+            <h3>Hide animation</h3>
+            <p class="hideanimation">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="hideanimation">Lorem ipsum dolor sit amet consectetur.</p>
+            <button id="hide_btn">Hide</button>
+        </div>
+
+        <div class="container container14">
+            <h3>toggle button</h3>
+            <p class="toggle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quaerat.</p>
+            <button id="toggle_btn">Toggle me</button>
+        </div>
+
+        <div class="container container15">
+            <h3>click button to fadeIn box</h3>
+            <div id="box1" style="background-color: teal; width: 30px; height: 30px; display: none; margin: 10px;"></div>
+            <div id="box2" style="background-color: yellow; width: 30px; height: 30px; display: none; margin: 10px;"></div>
+            <div id="box3" style="background-color: purple; width: 30px; height: 30px; display: none; margin: 10px;"></div>
+            <button id="fadeInBtn">fadeIn me</button>
+        </div>
+
+        <div class="container container16">
+            <h3>click button to fadeOut box</h3>
+            <div id="box4" style="background-color: teal; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box5" style="background-color: yellow; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box6" style="background-color: purple; width: 30px; height: 30px; margin: 10px;"></div>
+            <button id="fadeOutBtn">fadeIn me</button>
+        </div>
+
+        <div class="container container17">
+            <h3>click button to fadeToggle box</h3>
+            <div id="box7" style="background-color: teal; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box8" style="background-color: yellow; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box9" style="background-color: purple; width: 30px; height: 30px; margin: 10px;"></div>
+            <button id="fadeToggleBtn">fadeIn me</button>
+        </div>
+
+        <div class="container container18">
+            <h3>click button to fadeTo box</h3>
+            <div id="box10" style="background-color: teal; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box11" style="background-color: yellow; width: 30px; height: 30px; margin: 10px;"></div>
+            <div id="box12" style="background-color: purple; width: 30px; height: 30px; margin: 10px;"></div>
+            <button id="fadeToBtn">fadeIn me</button>
+        </div>
+
+        <div class="container container19">
+            <h3>click to slide down</h3>
+            <p id="slide_btn" style="background-color: aliceblue;">click to slide down para</p>
+            <p id="slide_para" style="background-color: white; padding: 10px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem distinctio, saepe quaerat illo provident aliquam doloremque itaque assumenda ipsam eaque.</p>
+        </div>
+
+        <div class="container container20">
+            <h3 style="color: white;">click to slide up</h3>
+            <p id="slideUp_btn" style="background-color: aliceblue;">click to slide up para</p>
+            <p id="slideUp_para" style="background-color: white; padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem distinctio, saepe quaerat illo provident aliquam doloremque itaque assumenda ipsam eaque.</p>
+        </div>
+
+        <div class="container container21">
+            <h3 style="color: white;">click to slide Toggle</h3>
+            <p id="slideToggle_btn" style="background-color: aliceblue;">click to slide toggle para</p>
+            <p id="slideToggle_para" style="background-color: white; padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem distinctio, saepe quaerat illo provident aliquam doloremque itaque assumenda ipsam eaque.</p>
+        </div>
+
+        <div class="container container22">
+            <h3>click to div animated</h3>
+            <button id="box_ani_btn" style="margin-bottom: 20px;">Click to animate</button>
+            <div id="animates_boxs" style="width: 20px; height: 20px; background-color: aqua; border-radius: 50%; position: absolute;"></div>
+        </div>
+
+        <div class="container container23">
+            <h3>click to div animated</h3>
+            <button id="box_animate_btn" style="margin-bottom: 20px;">Click to animate</button>
+            <div id="animate_box" style="width: 20px; height: 20px; background-color: black; border-radius: 50%; position: absolute;"></div>
+        </div>
+
+        <div class="container container24">
+            <h3>click to div animated</h3>
+            <button id="box_animates_btn" style="margin-bottom: 20px;">Click to animate</button>
+            <div id="animate_boxs" style="width: 20px; height: 20px; background-color: blueviolet; position: absolute;"></div>
+        </div>
+
+        <div class="container container25">
+            <h3>toggle to div animated</h3>
+            <button id="box_animates_toggle" style="margin-bottom: 20px;">Click to animate</button>
+            <div id="animate_box_toggle" style="width: 200px; height: 100px; background-color: azure; position: absolute;"></div>
+        </div>
+
+        <div class="container container26">
+            <h3>toggle to div animated</h3>
+            <button id="box_ani_toggle" style="margin-bottom: 20px;">Click to animate</button>
+            <div id="ani_box_toggle" style="width: 40px; height: 40px; background-color: aquamarine; position: absolute;"></div>
+        </div>
+    </div>
+
+
+    
+
+   
+    <!-- ===== JQuery cdn link ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+     <!-- ===== custome script file link ===== -->
+     <script src="script.js"></script>
+
+</body>
+</html>

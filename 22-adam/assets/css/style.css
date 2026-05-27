@@ -1,0 +1,227 @@
+.hero_container{
+    margin-bottom: 22rem;
+    /* border: 1px solid red; */
+    background-color: var(--white-c);
+    border-radius: 0 0 2rem 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ========== banner section start ========== */
+.banner_conatiner {
+    width: 100%;
+}
+.banner_conatiner .swiper{
+    width: 100%;
+}
+.banner_conatiner .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+/* ========== banner section end ========== */
+
+/* ========== mid section start ========== */
+.mid_container{
+    /* border: 1px solid; */
+}
+.mid_container .mid_text{
+    text-align: center;
+    font-weight: 450;
+    font-size: 2rem;
+    padding: .3rem 0;
+    position: relative;
+    transition: all .5s ease-in;
+}
+.mid_container .mid_text a:hover{
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+}
+.mid_container .mid_text::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: 30%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    opacity: 0;
+    transition: all .5s ease-in;
+    background-image: url("../images/ts.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.mid_container .mid_text:hover::after{
+    right: 5%;
+    opacity: 1;
+    transform: rotate(30deg);
+}
+/* ========== mid section end ========== */
+
+/* ========== growing library section start ========== */
+.growing_library_section{
+    background-color: #E8E8E8;
+    /* border: 1px solid; */
+    width: 100%;
+}
+.growing_library_text_box{
+    /* border: 1px solid; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.growing_library_text_box img{
+    width: 100%;
+    object-fit: cover;
+}
+.growing_library_text_box .icon-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+.growing_library_text_box .icon-container .app-icon {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    position: absolute;
+    animation: float 6s infinite ease-in-out;
+    /* border: 1px solid; */
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* ========== growing library section end ========== */
+
+/* ========== text slider section start ========== */
+.text_slider_container .h3_text_box {
+    display: flex;
+    justify-content: center;
+}
+
+.text_slider_container .sliderh3 {
+    font-size: 1.5rem;
+    /* border: 1px solid; */
+    line-height: 1.8rem;
+    width: 200px;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.text_slider_box {
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.text_slider_box .swiper {
+    /* border: 1px solid; */
+    overflow: hidden;
+    /* width: 1200px; */
+}
+
+.text_slider_box .swiper-slide>.sliderh3 {
+    font-size: 1.4rem;
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+.text_slider_box .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s ease, transform 0.5s ease;
+    /* border: 1px solid red; */
+}
+
+.swiper-slide.swiper-slide-active {
+    /* color: red; */
+    /* Highlight active slide text */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    /* color: black; */
+    /* Non-active slides */
+    opacity: 0.7;
+}
+
+/* ========== text slider section end ========== */
+
+/* ========== footer section start ========== */
+footer{
+    background-color: var(--black-c);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.footer_container{
+    display: flex;
+    color: var(--white-c);
+    flex-wrap: wrap;
+}
+.footer_container .footer_box1{
+    padding: 1rem;
+    /* border: 1px solid white; */
+    flex-basis: 60%;
+}
+.footer_container .footer_box2{
+    padding: 1rem;
+    /* border: 1px solid white; */
+    flex-basis: 20%;
+}
+.footer_container .footer_box3{
+    padding: 1rem;
+    /* border: 1px solid white; */
+    flex-basis: 20%;
+}
+.footer_container .footer_box2 .footer_nav_li{
+    transition: all .3s ease-in;
+}
+.footer_container .footer_box2 .footer_nav_li:hover .footer_nav_a{
+    padding-left: .5rem;
+    color: var(--white-c);
+}
+.footer_container .footer_box2 .footer_nav_a{
+    color: var(--light-gray-c);
+    transition: all .3s ease-in;
+    font-size: .9rem;
+}
+
+.footer_container .footer_box3 .footer_nav_li{
+    transition: all .3s ease-in;
+}
+.footer_container .footer_box3 .footer_nav_li:hover .footer_nav_a{
+    padding-left: .5rem;
+    color: var(--white-c);
+}
+.footer_container .footer_box3 .footer_nav_a{
+    color: var(--light-gray-c);
+    transition: all .3s ease-in;
+    font-size: .9rem;
+}
+/* ========== footer section ende ========== */
+
+/* ========== thank you section start ========== */
+.thankyou{
+    width: 100%;
+}
+.thankyou img{
+    width: 100%;
+    object-fit: cover;
+}
+/* ========== thank you section end ========== */

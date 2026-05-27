@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --black-c: #000000;
+    --white-c: #ffffff;
+    --gray-c: #cecbcb;
+    --light-gray-c: #ebebeb;
+    --dark-gray-c: #808080;
+}
+a{
+    text-decoration: none;
+    color: var(--black-c);
+}
+ul{
+    list-style: none;
+}
+.custome_width{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top_padding{
+    padding-top: 3rem;
+}
+.bottom_padding{
+    padding-bottom: 3rem;
+}
+.left_right_padding{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

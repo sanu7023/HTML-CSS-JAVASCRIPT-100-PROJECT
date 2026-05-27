@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <!-- remix cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- ===== custome css file link ===== -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="header_container">
+            <div class="left_box">
+                <h1>Todo Done</h1>
+                <p>Keep it up!</p>
+                <div class="progress_bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="right_box">
+                <h3 class="numbers">0 / 0</h3>
+            </div>
+        </section>
+
+        <form class="input_form" action="">
+            <input type="text" class="taskInput" placeholder="Write your task">
+            <button type="submit" class="input_btn" id="addTaskBtn">+</button>
+        </form>
+
+        <div class="task_list">
+            <!-- <div class="task_item">
+                <div class="task">
+                    <input type="checkbox" class="checkbox">
+                    <p>finish this project</p>
+                </div>
+                <div class="icons">
+                    <i class="ri-edit-box-line"></i>
+                    <i class="ri-delete-bin-4-line"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- ===== custom js file link ===== -->
+     <script src="script.js"></script>
+</body>
+</html>
